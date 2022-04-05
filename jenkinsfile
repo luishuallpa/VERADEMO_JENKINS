@@ -1,0 +1,25 @@
+def callVeracode (String veracode_username, String veracode_password){
+
+//def app_name=this.getApplicationName()
+//def scanName=this.currentGitCommit
+
+veracode applicationName: 'VERADEMO',
+createProfile: false,
+canFailJob: true,
+//criticality: 'VeryHigh',
+debug: true,
+fileNamePattern: '',
+replacementPattern: '',
+sandboxName: 'VERADEMO_SANDBOX',
+createSandbox: true,
+scanExcludesPattern: '',
+scanIncludesPattern: '',
+scanName: '1',
+teams: 'Default Team',
+//timeout: 60,
+uploadExcludesPattern: '',
+uploadIncludesPattern: '**/**.war',
+vid: "${veracode_username}",
+vkey: "${veracode_password}",
+waitForScan: true
+}
